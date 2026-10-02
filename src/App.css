@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: lavender;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: purple;
+}
+
+.square {
+  background-color: white;
+  border: 2px solid purple;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  height: 70px;
+  width: 70px;
+  padding: 0;
+  text-align: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.game-info {
+  margin-left: 30px;
+}
+
+.game-info button {
+  background-color: lightblue;
+  border: 1px solid purple;
+  padding: 6px 10px;
+  margin-bottom: 5px;
+}
+
+.winning-square {
+  background-color: yellow;
+}
